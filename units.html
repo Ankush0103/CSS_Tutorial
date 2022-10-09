@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position</title>
+    <!-- px-> It is relative to viewing device -->
+    <!-- em-> Unit relative to parent font-size -->
+    <!-- rem-> Unit relative to root font-size -->
+    <!-- vw-> Unit relative to 1% viewport width -->
+    <!-- vh-> Unit relative to 1% viewport height -->
+    <!-- %-> Unit relative to parent element -->
+    <style>
+        .container{
+            font-size: 4px;
+        }
+        .box{
+            /* font-size: 12px; */
+            /* font-size: 3em; 34*3 = 102px */
+            /* font-size: 3rem; 16*3 = 48px 16px is html size */
+            background-color: red;
+        }
+        .box2{
+            background-color: aqua;
+            width: 334px;
+            width: 50vw;
+            height: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>This is a paragraph</p>
+        <div class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident ut quas aperiam deserunt nulla magni nobis impedit, dolorum sint explicabo unde soluta perspiciatis, totam repellat hic, obcaecati ipsa commodi natus veritatis dicta ad repellendus!
+        </div>
+        <div class="box2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus cupiditate culpa aut?
+        </div>
+    </div>
+</body>
+</html>

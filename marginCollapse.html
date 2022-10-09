@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            /* display: inline; */
+            background-color: red;
+            margin: 30px;
+            height: 20px;
+            height: 2320px;
+            width: 233px;
+            border: 2px solid black;
+        }
+        .box2{
+            background-color: aqua;
+            margin: 34px;
+            height: 20px;
+            width: 100%;
+            padding: 2px;
+            border: 1px solid grey;
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- When two margin from differnt elements overlaps, the equivalent margin is greater of the two. This is called margin collapse. -->
+    <!-- Box Sizing determines what out of padding and border is included in elements width and height. It can be content-box or border-box. Border box is more advantageous as more effective width is set. -->
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quas dolorem? Iusto neque sint excepturi voluptate, quaerat a repellat reiciendis earum deleniti, ab expedita eos veniam quisquam incidunt eligendi sunt est atque illum consequatur!
+    </div>
+    <div class="box2">
+        <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eaque rem, voluptatum libero cupiditate vero amet distinctio dolorum dolorem. Maxime commodi deserunt, iure, perferendis adipisci at, repellat quis eveniet suscipit labore aut. -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* *{} means for all elements
+ */
+.red{
+    background: rgb(231, 21, 238);
+    height: 300px;
+    color: white;
+}
+
+.green{
+    background: green;
+    color: aqua;
+}

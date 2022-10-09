@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <!-- Used to apply CSS only when certain condition is true.  -->
+    <style>
+        .container{
+            background-color: red;
+            height: 34vh;
+       }
+       @media screen and (max-width: 800px){
+            body{
+                background-color: brown;
+                /* On shrinking size of screen to 800px back-ground color changes to brown */
+            }
+            .container{
+                background-color: yellow; /* On shrinkingsize to conatiner background-color changes to yellow */
+            }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, iste hic nisi non dolores deleniti vitae sint excepturi nihil. Error iste numquam reprehenderit obcaecati harum sit eius aliquam expedita, aliquid assumenda molestiae. Porro, quibusdam.
+    </div>
+</body>
+</html>
